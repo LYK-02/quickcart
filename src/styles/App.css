@@ -20,6 +20,45 @@ body {
   padding: 20px;
 }
 
+.loading-state {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.search-results {
+  color: #555;
+  margin: 8px 0 0;
+  font-weight: 500;
+}
+
+.no-results,
+.empty-category {
+  margin-top: 40px;
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  color: #555;
+}
+
+.category-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.back-home-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 .toast-message {
   position: fixed;
   top: 20px;
