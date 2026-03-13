@@ -8,7 +8,18 @@
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-text {
   text-align: center;
+  flex: 1;
 }
 
 .header-title {
@@ -23,7 +34,53 @@
   font-weight: 300;
 }
 
+.cart-icon-btn {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.cart-icon-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.cart-icon-btn:active {
+  transform: scale(0.98);
+}
+
+.cart-badge {
+  position: absolute;
+  top: -7px;
+  right: -5px;
+  min-width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: #ff4757;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  padding: 0 6px;
+  line-height: 1;
+  box-shadow: 0 4px 10px rgba(255, 71, 87, 0.35);
+}
+
 @media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+  }
+
   .header-title {
     font-size: 2rem;
   }

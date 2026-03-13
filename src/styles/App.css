@@ -19,3 +19,24 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
+
+.toast-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #1f8a5b;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 8px 18px rgba(31, 138, 91, 0.25);
+  font-weight: 600;
+  z-index: 1200;
+}
+
+@media (max-width: 480px) {
+  .toast-message {
+    left: 12px;
+    right: 12px;
+    text-align: center;
+  }
+}
